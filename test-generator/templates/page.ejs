@@ -1,0 +1,9 @@
+<div class="navs">
+     <% if(totalPage > 1) { %>
+     <% for(var i=1; i<=totalPage; i++) { %>
+        <div class="nav">
+            <a href='./index<%= i %>.html'><%= i %></a>
+        </div>
+     <% } %>
+     <% } %>
+  </div>

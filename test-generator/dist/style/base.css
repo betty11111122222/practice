@@ -1,0 +1,142 @@
+.header{
+    width:100%;
+    margin: 0 auto;
+    background-color:#F0F8FF;
+    height:auto;
+    display: flex;
+    align-items: center;
+    color:#333333;
+}
+.title{
+    width:50%;
+    text-align: center;
+}
+.title h1{
+    font-size: 2rem;
+    
+}
+nav{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    font-weight: bold;
+    margin-right:20px;
+    font-size: 1.5rem;
+}
+nav a:first-child:hover{
+    color:white;
+}
+nav .current{
+    color:#333333;
+    text-decoration: none;
+}
+nav .current-active{
+    color:gray;
+    text-decoration: underline;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+
+
+.index{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    background: #FFFFFF;
+    word-break: break-word;;
+}
+h2{
+    color:#666666;
+    font-size:1.5 rem;
+    text-align: center;
+}
+.article-list{
+    width:100%;
+}
+.article{
+    width:60%;
+    aspect-ratio:6/1;
+    background-color: #FFFFFF;
+    border: 1px solid #E1E9F2; 
+    box-shadow: 0 2px 8px rgba(200, 215, 230, 0.3);
+    margin-left:20%;
+    overflow:auto;
+    border-radius: 5px;
+    margin-bottom:1%;
+}
+.article:hover{
+    transform: translateX(5%);
+}
+.article a{
+    text-decoration: none;
+    color:#666666;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+.article p,span{
+    font-size:1rem;
+}
+@media (max-width: 768px){
+     .title h1{
+    font-size: 1.5rem;
+}
+nav a{
+    font-size: 1rem;
+}
+    h2{
+        font-size: 1rem;
+    }
+    .article{
+        width:65%;
+        aspect-ratio: 2.5/1;
+        margin-left: 17.5%;   
+    }
+    .article a{
+        font-size: 0.8rem;
+    }
+    .article p,span{
+        font-size: 0.5rem;
+    }
+    img {
+        max-width:100%;
+        height:auto;
+    }
+    .footer h3{
+        font-size: 0.8rem;
+    }
+}
+.navs{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    width:2%;
+    aspect-ratio: 1/1;
+    background-color: #F0F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+.nav a{
+    text-decoration: none;
+    color:#333333;
+    font-weight: bold;
+}
+.footer{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    background-color:#F0F8FF;
+    text-align: center;
+}
+.footer h3{
+    font-size:1.2rem;
+    color:#333333;
+}
