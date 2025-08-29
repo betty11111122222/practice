@@ -1,9 +1,16 @@
-<div class="navs">
+<div class="page">
      <% if(totalPage > 1) { %>
-     <% for(var i=1; i<=totalPage; i++) { %>
-        <div class="nav">
-            <a href='./index<%= i %>.html'><%= i %></a>
-        </div>
-     <% } %>
+     
+        <% if(currentPage==1) { %>
+         <a href="#" class="disabled">&lt;&nbsp;prev</a>
+         <a href="./index<%=currentPage+1%>.html" class="abled">next&nbsp;&gt;</a>
+        <% } else if(currentPage==totalPage) { %>
+         <a href="./index<%=currentPage-1%>.html" class="abled">&lt;&nbsp;prev</a>
+         <a href="#" class="disabled">next&nbsp;&gt;</a>
+        <% } else { %>
+         <a href="./index<%=currentPage-1%>.html" class="abled">&lt;&nbsp;prev</a>
+         <a href="./index<%=currentPage+1%>.html" class="abled">next&nbsp;&gt;</a>
+         <% } %>
+     
      <% } %>
   </div>

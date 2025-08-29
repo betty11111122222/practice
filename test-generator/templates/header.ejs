@@ -1,9 +1,15 @@
-<div class="header">
-    <div class="title">
-        <h1>my blogs</h1>
+  <nav class="navbar">
+    <a href="#" class="logo">MyBlog</a>
+
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <nav>
-        <a href="<%= homeUrl %>" class="current<%= currentPage === 'index'?'-active' : '' %>">Home</a>
-        <a href="#" class="current<%= currentPage === 'post'?'-active' : '' %>">Article</a>
-    </nav>
-  </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="<%=homeUrl%>" class="<%= currentPage === 'home'? 'active' : 'non-active' %>">HOME</a></li>
+      <li><a href="#" class="<%= currentPage === 'post'? 'active' : 'non-active' %>">BLOG</a></li>
+      
+    </ul>
+  </nav>

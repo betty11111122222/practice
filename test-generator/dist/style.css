@@ -1,0 +1,314 @@
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    /* *是通配选择器
+       border-box 宽度=内容宽度+padding+border */
+    body {
+      font-family: 'Microsoft YaHei', sans-serif;  /* 第二个为备用字体 */
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+    
+    .navbar {
+      height: 60px;
+      min-height: 60px; /*保证高度不压缩*/
+      display: flex; /* 使子元素水平排列 */
+      align-items: center;
+      justify-content: space-between; 
+      padding: 0 100px;
+      background-color: white;
+      box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+       position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .logo {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      /* position: absolute;
+      left:50%;
+      transform: translateX(-50%); */
+    }
+    
+    .nav-links a {
+      display: inline-block;
+      color: black;
+      padding: 8px 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .non-active{
+        text-decoration: none;
+    }
+
+    .active{
+     text-decoration: underline #FFF44F 2px;
+     text-underline-offset: 8px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: none;
+      background-color:#e3f2fd;
+      transform: translateY(-2px);
+    }
+
+    /* 汉堡菜单 */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #333;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+    
+    .content {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      gap:30px;
+    }
+    .user-info {
+      position:sticky;
+      top:80px;
+      width:300px;
+      height:230px;
+      border-radius: 2%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+    .user-info img{
+        position: absolute;
+        border-radius: 50%;
+        left:15px;
+        top: 40px;
+    }
+    .name{
+        position: absolute;
+        top: 20px;
+        left: 160px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .job{
+        position:absolute;
+        left:135px;
+        top:50px;
+    }
+     .line1{
+        width:180px;
+        position: absolute;
+        left:105px;
+        top:80px;
+    }
+    .number{
+        position: absolute;
+        left:100px;
+        top:90px;
+        width:70px;
+        height:70px;
+        color:black;
+        text-align: center;
+    }
+    .date{
+        position: absolute;
+        left:170px;
+        top:90px;
+        width:120px;
+        height:70px;
+        color:black;
+        text-align: center;
+    }
+    .line2{
+      width:270px;
+        position: absolute;
+        left:15px;
+        top:150px;
+    }
+    .number span,.date span{
+        font-size: small;
+    }
+   
+    .social-media{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      position: absolute;
+      top:155px;
+      left:20px;
+    }
+    .email,.github{
+      display: flex;
+      gap:5px;
+    }
+   
+    .blog-lists{
+       display: flex;
+       flex-direction: column;
+       gap:20px;
+       width:700px;
+       height:auto;
+    }
+    .article{
+      width:100%;
+      height:auto;
+      border-radius:2%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding:20px 0px 0px 10px;
+    }
+    .article:hover{
+      transform: scale(1.02);
+    }
+    .article a{
+      display: inline-block;
+      width: 100%;
+      margin-top:2px;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+      font-size: large;
+      /* background-color: #eee; */
+    }
+    .article p{
+     margin-top:5px;
+     font-size:medium;
+    }
+    .article span{
+      display: inline-block;
+      margin-bottom:15px;
+      font-size: small;
+    }
+    .page{
+      width: 100%;
+      height:auto;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px;
+      margin-bottom:25px;
+    }
+    .abled{
+      text-decoration: none;
+      color:cadetblue;
+    }
+    .abled:hover{
+      text-decoration: underline;
+      color: gray;
+    }
+    .abled{
+      text-decoration: none;
+      color:gray;
+    }
+    .blog-posts{
+      flex:1;
+      width:100%;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      overflow-wrap: break-word;
+      word-break: break-all;
+    }
+    .blog-posts img{
+      max-width:100%;
+    }
+    footer{
+      position: sticky;
+      width:100%;
+      height:auto;
+      bottom:0;
+      background-color:black;
+      color:white;
+      text-align: center;
+      padding:10px;
+    }
+    
+    /* 响应式设计 */
+   @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+      
+      .user-info {
+        position: relative;
+        top:5px;
+      }
+      .blog-lists{
+        width:100%;
+        height:auto;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0 15px;
+      }
+      
+      .hamburger {
+        display: flex;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        transition: 0.3s;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+      }
+      
+      .nav-links.active {
+        left: 0;
+      }
+      
+      .nav-links li {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .nav-links a {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+     
+    }
+    
+    @media (max-width: 400px) {
+      .navbar {
+        padding: 0 10px;
+      }
+      
+      .logo {
+        font-size: 1.2rem;
+      }
+      
+     
+      .blog-posts {
+        padding: 15px;
+      }
+    }

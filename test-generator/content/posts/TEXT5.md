@@ -1,7 +1,7 @@
 ---
 title: OpenAI 官宣 ChatGPT 周活 7 亿,为留住马斯克特斯拉奖励其290亿美元股票,传英伟达将对RTX50系降价
-description: 极克头条
 date: 2025-08-10T03:01:00.000Z**
+description: 「极客头条」来啦，快来看今天都有哪些值得我们技术人关注的重要新闻吧
 ---
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/csdngeeknews/article/details/149931848?spm=1000.2115.3001.5927)
 

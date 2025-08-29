@@ -3,67 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my blog</title>
-  <link rel="stylesheet" href="./style/base.css">
-  <script src="./js/base.js" defer></script>
+  <title>my blogs</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
-  <div class="header">
-    <div class="title">
-        <h1>my blogs</h1>
+    <nav class="navbar">
+    <a href="#" class="logo">MyBlog</a>
+
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <nav>
-        <a href="#" class="current-active">Home</a>
-        <a href="#" class="current">Article</a>
-    </nav>
-  </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active">HOME</a></li>
+      <li><a href="#" class="non-active">BLOG</a></li>
+      
+    </ul>
+  </nav>
 
 
-  <main>
-    <div class="index">
-    <h2>Welcome to my blogs!</h2>
-     <div class="article-list">
-       <div class="article">
-        <a href="./posts/TEXT1.html">15亿美元Offer遭拒，小扎用2.5亿改挖00后辍学博士,马斯克嘲讽我不开天价也能挖你的人!</a>
-        <p>简介: &nbsp; 发布时间:17 天前 &nbsp; 修改时间:2025/8/20 18:20:42</p>
-       </div>
-    </div>
- <div class="article-list">
-       <div class="article">
-        <a href="./posts/TEXT2.html">2025 全球产品经理大会最新全日程重磅发布，立即解锁 AI 时代的产品力!</a>
-        <p>简介: &nbsp; 发布时间:16 天前 &nbsp; 修改时间:2025/8/21 18:31:11</p>
-       </div>
-    </div>
- <div class="article-list">
-       <div class="article">
-        <a href="./posts/TEXT3.html">一文读懂 AI Search：从 RAG 到 DeepSearch</a>
-        <p>简介: &nbsp; 发布时间:15 天前 &nbsp; 修改时间:2025/8/21 18:31:24</p>
-       </div>
-    </div>
-    <div class="navs">
-     
-     
-        <div class="nav">
-            <a href='./index1.html'>1</a>
+  <div class="content">
+    <div class="user-info">
+            <img src="./user.jpg" width="70" height="70" >
+            <span class="name">Betty</span>
+            <p class="job">前端开发工程师</p>
+        <hr class="line1">
+        <div class="number">
+            <p>5</p>
+            <span>博客</span>
         </div>
-     
-        <div class="nav">
-            <a href='./index2.html'>2</a>
+        <div class="date">
+            <p>2025-8-21</p>
+            <span>加入</span>
         </div>
-     
-     
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
- 
-  </div>  <!-- 这里会插入子模板内容 -->
-  </main>
+        <div class="social-media">
+          <div class="email">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 23h-24v-13.275l2-1.455v-7.27h20v7.272l2 1.453v13.275zm-20-10.472v-9.528h16v9.527l-8 5.473-8-5.472zm14-.528h-12v-1h12v1zm0-3v1h-12v-1h12zm-7-1h-5v-3h5v3zm7 0h-6v-1h6v1zm0-2h-6v-1h6v1z"/></svg>
+            <span>3092256695@qq.com</span>
+          </div>
+          <div class="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+            <span>github.com/betty11111122222</span>
+          </div>
+        </div>
 
-   <div class="footer">
-    <h3>© 2025 my blogs</h3>
+    </div>
+    
+    <div class="blog-lists">
+      <div class="article">
+        <a href="posts\TEXT4.html">Anthropic CEO 万字访谈：亲述丧父之痛、炮轰黄仁勋、揭秘指数定律与 AI 未来</a>
+        <p>简介:Anthropic CEO Dario Amodei </p>
+        <span>发布时间:20 天前 &nbsp; 修改时间:2025/8/29 21:48:01</span>
+       </div>
+
+<div class="article">
+        <a href="posts\TEXT3.html">一文读懂 AI Search：从 RAG 到 DeepSearch</a>
+        <p>简介:为了应对 LLMs 内在知识的有限性，检索... </p>
+        <span>发布时间:21 天前 &nbsp; 修改时间:2025/8/29 21:47:45</span>
+       </div>
+
+<div class="article">
+        <a href="posts\TEXT2.html">2025 全球产品经理大会最新全日程重磅发布，立即解锁 AI 时代的产品力!</a>
+        <p>简介:8 月 15-16 日，由 CSDN &amp; Boolan 举办的 2025 全球产品经理大会... </p>
+        <span>发布时间:22 天前 &nbsp; 修改时间:2025/8/29 21:47:16</span>
+       </div>
+
+<div class="article">
+        <a href="posts\TEXT1.html">15亿美元Offer遭拒，小扎用2.5亿改挖00后辍学博士,马斯克嘲讽我不开天价也能挖你的人!</a>
+        <p>简介:这两天，科技圈被一场 “抢人大战” 刷屏了... </p>
+        <span>发布时间:23 天前 &nbsp; 修改时间:2025/8/29 21:46:44</span>
+       </div>
+
+      <div class="page">
+     
+     
+        
+         <a href="#" class="disabled">&lt;&nbsp;prev</a>
+         <a href="./index2.html" class="abled">next&nbsp;&gt;</a>
+        
+     
+     
   </div>
+
+</div>
+
+  </div>
+
+    <footer>
+    <p>© 2025 MyBlog. All rights reserved.</p>
+  </footer>
+
 
   
 </body>

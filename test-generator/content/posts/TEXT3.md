@@ -1,7 +1,7 @@
 ---
 title: 一文读懂 AI Search：从 RAG 到 DeepSearch
-description: AI Serach
 date: 2025-08-08T02:57:00.000Z
+description: 为了应对 LLMs 内在知识的有限性，检索...
 ---
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/csdnnews/article/details/149950039?spm=1000.2115.3001.5927)
 

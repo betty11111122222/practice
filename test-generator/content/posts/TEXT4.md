@@ -1,7 +1,7 @@
 ---
 title: Anthropic CEO 万字访谈：亲述丧父之痛、炮轰黄仁勋、揭秘指数定律与 AI 未来
-description: Anthropic CEO 万字访谈
 date: 2025-08-09T03:01:00.000Z
+description: Anthropic CEO Dario Amodei
 ---
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/149843991?spm=1000.2115.3001.5926)
 

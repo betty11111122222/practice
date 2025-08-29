@@ -1,7 +1,7 @@
 ---
 title: 2025 全球产品经理大会最新全日程重磅发布，立即解锁 AI 时代的产品力!
 date: 2025-08-07T03:01:00.000Z
-description: 全球产品经理大会
+description: 8 月 15-16 日，由 CSDN & Boolan 举办的 2025 全球产品经理大会...
 ---
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/csdnnews/article/details/149816580?spm=1000.2115.3001.5926)
 

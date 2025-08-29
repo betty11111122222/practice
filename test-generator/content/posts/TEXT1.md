@@ -1,7 +1,7 @@
 ---
 title: 15亿美元Offer遭拒，小扎用2.5亿改挖00后辍学博士,马斯克嘲讽我不开天价也能挖你的人!
 date: 2025-08-06T03:01:00.000Z
-description: 小扎
+description: 这两天，科技圈被一场 “抢人大战” 刷屏了...
 ---
 
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/csdnnews/article/details/149917469?spm=1000.2115.3001.5927)
